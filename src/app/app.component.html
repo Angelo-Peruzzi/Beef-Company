@@ -13,32 +13,63 @@
 
     <div class="main-dropdowns">
       <mat-form-field>
-        <mat-label> Pane </mat-label>
+        <mat-label> Bread </mat-label>
         <mat-select>
-          <mat-option value="pane-normale"> Pane normale </mat-option>
-          <mat-option value="pane-integrale"> Pane integrale </mat-option>
+          <mat-option value="normal-bread"> Normal bread </mat-option>
+          <mat-option value="pane-integrale"> Whole grain bread </mat-option>
         </mat-select>
       </mat-form-field>
       <mat-form-field>
-        <mat-label> Contenuto </mat-label>
+        <mat-label> Content </mat-label>
         <mat-select>
-          <mat-option value="pollo"> Pollo </mat-option>
-          <mat-option value="manzo"> Manzo </mat-option>
-          <mat-option value="veg"> Vegetariano </mat-option>
+          <mat-option value="beef"> Beef </mat-option>
+          <mat-option value="chicken"> Chicken </mat-option>
+          <mat-option value="veg"> Veggie </mat-option>
         </mat-select>
       </mat-form-field>
       <mat-form-field>
-        <mat-label> Salse </mat-label>
+        <mat-label> Sauce </mat-label>
         <mat-select>
+          <mat-option value="none"> None </mat-option>
           <mat-option value="ketchup"> Ketchup </mat-option>
-          <mat-option value="maionese"> Maionese </mat-option>
+          <mat-option value="maionese"> Mayonnaise </mat-option>
           <mat-option value="bbq"> BBQ </mat-option>
         </mat-select>
       </mat-form-field>
     </div>
-
-    
+    <br />
+    <br />
     <section class="main-cards">
+      <mat-card>
+        <mat-card-header> 
+          <mat-card-title> Bread </mat-card-title>
+        </mat-card-header>
+        <img
+          mat-card-image
+          src="https://handletheheat.com/wp-content/uploads/2023/04/homemade-burger-buns-SQUARE.jpg"
+          alt="Photo of beef"
+        />
+      </mat-card>
+      <mat-card>
+        <mat-card-header> 
+          <mat-card-title> Beef </mat-card-title>
+        </mat-card-header>
+        <img
+          mat-card-image
+          src="https://ottawavalleymeats.com/cdn/shop/articles/Minced-Beef-Patties.webp?v=1683736998"
+          alt="Photo of beef"
+        />
+      </mat-card>
+      <mat-card>
+        <mat-card-header> 
+          <mat-card-title> Ketchup </mat-card-title>
+        </mat-card-header>
+        <img
+          mat-card-image
+          src="https://venequ.it/wp-content/uploads/2022/10/ketchup-texture-1.jpg"
+          alt="Photo of beef"
+        />
+      </mat-card>
     </section>
   </body>
 </html>

@@ -38,14 +38,24 @@ body{
     justify-content: center;
     align-items: center;
     
-    background-color: blue;
+    background: linear-gradient(rgba(0, 0, 0, 0.408), rgba(128, 128, 128, 0.321));
 }
 
 .main-cards mat-card{
-    margin:0px 30px 0px 30px;
+    margin-right: 4vw;
     padding:0;
     background-color: rgb(224, 156, 29);
     color:white;
     width: 15%;
     height: 15%;
+}
+
+.main-next-button{
+    display:flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+}
+.main-next-button button{
+    margin: 15px 10vw 0px 0px;
 }

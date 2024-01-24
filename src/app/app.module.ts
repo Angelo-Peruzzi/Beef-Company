@@ -10,6 +10,15 @@ import { Components2Component } from './pagina-2/components2/components2.compone
 import { HttpClientModule } from '@angular/common/http';
 
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSelectModule } from '@angular/material/select';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import {MatDialog, MatDialogRef, MatDialogModule} from '@angular/material/dialog';
+
+
 
 @NgModule({
   declarations: [
@@ -20,11 +29,23 @@ import { HttpClientModule } from '@angular/common/http';
     Components2Component,
     
     
+    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+    MatSelectModule,
+    MatSlideToggleModule,
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+   
+    
     
    
   ],

@@ -22,18 +22,18 @@
       <mat-form-field>
         <mat-label> Content </mat-label>
         <mat-select #content (valueChange)="contentChoice(content.value)">
-          <mat-option value="beef"> Beef </mat-option>
-          <mat-option value="chicken"> Chicken </mat-option>
-          <mat-option value="veg"> Veggie </mat-option>
+          <mat-option value="Beef"> Beef </mat-option>
+          <mat-option value="Chicken"> Chicken </mat-option>
+          <mat-option value="Veggie"> Veggie </mat-option>
         </mat-select>
       </mat-form-field>
       <mat-form-field>
         <mat-label> Sauce </mat-label>
         <mat-select #sauce (valueChange)="sauceChoice(sauce.value)">
           <mat-option value="none"> None </mat-option>
-          <mat-option value="ketchup"> Ketchup </mat-option>
-          <mat-option value="mayonnaise"> Mayonnaise </mat-option>
-          <mat-option value="bbq"> BBQ </mat-option>
+          <mat-option value="Ketchup"> Ketchup </mat-option>
+          <mat-option value="Mayonnaise"> Mayonnaise </mat-option>
+          <mat-option value="BBQ"> BBQ </mat-option>
         </mat-select>
       </mat-form-field>
     </div>
@@ -77,5 +77,14 @@
         <mat-icon>check_circle</mat-icon>
       </button>
     </div>
+
+    <br>
+    <br>
+
+    <footer class="main-footer">
+      Beef Company Srl.,
+      Via dei Pagliacci, 420, Italy (IT),
+      +420 69696969
+    </footer>
   </body>
 </html>

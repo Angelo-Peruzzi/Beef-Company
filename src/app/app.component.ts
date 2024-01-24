@@ -10,11 +10,11 @@ export class AppComponent {
   magicOrder(): void {
     alert("gay");
   }
-  
+
 
   chosenBread: string = "Nessuna selezione";
   breadChoice(s: string): void {
-    alert("pane selezionato: " + s);
+    console.log("pane selezionato: " + s);
     this.chosenBread = s;
     this.getBread();
   }
@@ -24,7 +24,7 @@ export class AppComponent {
 
   chosenContent: string = "Nessuna selezione";
   contentChoice(s: string): void {
-    alert("content selezionato: " + s);
+    console.log("content selezionato: " + s);
     this.chosenContent = s;
   }
   getContent(): string {
@@ -33,7 +33,7 @@ export class AppComponent {
 
   chosenSauce: string = "Nessuna selezione";
   sauceChoice(s: string): void {
-    alert("salsa selezionata: " + s);
+    console.log("salsa selezionata: " + s);
     this.chosenSauce = s;
   }
   getSauce():string{

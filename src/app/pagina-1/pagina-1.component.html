@@ -1,13 +1,9 @@
-<app-components1></app-components1>
-
-<!-- <app-components2></app-components2> -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="app.component.css" />
+    <link rel="stylesheet" href="pagina-1.component.css" />
     <title>Document</title>
   </head>
   <body>
@@ -44,35 +40,46 @@
     <br />
     <br />
     <section class="main-cards">
+      <!-- card1 -->
       <mat-card>
         <mat-card-header>
-          <mat-card-title> {{getBread()}} </mat-card-title>
+          <mat-card-title> panino con carne </mat-card-title>
         </mat-card-header>
         <img
           mat-card-image
           src="https://handletheheat.com/wp-content/uploads/2023/04/homemade-burger-buns-SQUARE.jpg"
           alt="Photo of beef"
         />
+        <mat-card-subtitle> descrizione</mat-card-subtitle>
+        <button mat-raised-button color="accent">ordina</button>
       </mat-card>
+
+      <!-- card2 -->
       <mat-card>
         <mat-card-header>
-          <mat-card-title> {{getContent()}} </mat-card-title>
+          <mat-card-title> panino con pollo </mat-card-title>
         </mat-card-header>
         <img
           mat-card-image
           src="https://ottawavalleymeats.com/cdn/shop/articles/Minced-Beef-Patties.webp?v=1683736998"
           alt="Photo of beef"
         />
+        <mat-card-subtitle> descrizione card</mat-card-subtitle>
+        <button mat-raised-button color="accent">ordina</button>
       </mat-card>
+
+      <!-- card3 -->
       <mat-card>
         <mat-card-header>
-          <mat-card-title> {{getSauce()}} </mat-card-title>
+          <mat-card-title> panino vegetariano </mat-card-title>
         </mat-card-header>
-        <img
+        <img 
           mat-card-image
           src="https://venequ.it/wp-content/uploads/2022/10/ketchup-texture-1.jpg"
           alt="Photo of beef"
         />
+        <mat-card-subtitle> descrizione card</mat-card-subtitle>
+        <button mat-raised-button color="accent">ordina</button>
       </mat-card>
     </section>
     <div class="main-next-button">

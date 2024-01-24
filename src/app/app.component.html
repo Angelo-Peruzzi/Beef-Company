@@ -14,14 +14,14 @@
     <div class="main-dropdowns">
       <mat-form-field>
         <mat-label> Bread </mat-label>
-        <mat-select>
-          <mat-option value="normal-bread"> Normal bread </mat-option>
-          <mat-option value="pane-integrale"> Whole grain bread </mat-option>
+        <mat-select #bread (valueChange)="breadChoice(bread.value)">
+          <mat-option value="Normal bread"> Normal bread </mat-option>
+          <mat-option value="Whole grain bread"> Whole grain bread </mat-option>
         </mat-select>
       </mat-form-field>
       <mat-form-field>
         <mat-label> Content </mat-label>
-        <mat-select>
+        <mat-select #content (valueChange)="contentChoice(content.value)">
           <mat-option value="beef"> Beef </mat-option>
           <mat-option value="chicken"> Chicken </mat-option>
           <mat-option value="veg"> Veggie </mat-option>
@@ -29,10 +29,10 @@
       </mat-form-field>
       <mat-form-field>
         <mat-label> Sauce </mat-label>
-        <mat-select>
+        <mat-select #sauce (valueChange)="sauceChoice(sauce.value)">
           <mat-option value="none"> None </mat-option>
           <mat-option value="ketchup"> Ketchup </mat-option>
-          <mat-option value="maionese"> Mayonnaise </mat-option>
+          <mat-option value="mayonnaise"> Mayonnaise </mat-option>
           <mat-option value="bbq"> BBQ </mat-option>
         </mat-select>
       </mat-form-field>
@@ -42,7 +42,7 @@
     <section class="main-cards">
       <mat-card>
         <mat-card-header>
-          <mat-card-title> Bread </mat-card-title>
+          <mat-card-title> {{getBread()}} </mat-card-title>
         </mat-card-header>
         <img
           mat-card-image
@@ -52,7 +52,7 @@
       </mat-card>
       <mat-card>
         <mat-card-header>
-          <mat-card-title> Beef </mat-card-title>
+          <mat-card-title> {{getContent()}} </mat-card-title>
         </mat-card-header>
         <img
           mat-card-image
@@ -62,7 +62,7 @@
       </mat-card>
       <mat-card>
         <mat-card-header>
-          <mat-card-title> Ketchup </mat-card-title>
+          <mat-card-title> {{getSauce()}} </mat-card-title>
         </mat-card-header>
         <img
           mat-card-image
@@ -72,7 +72,7 @@
       </mat-card>
     </section>
     <div class="main-next-button">
-      <button mat-raised-button color="accent">
+      <button mat-raised-button color="accent" (click)="magicOrder()">
         Next
         <mat-icon>check_circle</mat-icon>
       </button>

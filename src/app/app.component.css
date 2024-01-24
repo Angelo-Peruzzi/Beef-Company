@@ -42,7 +42,7 @@ body{
 }
 
 .main-cards mat-card{
-    margin-right: 4vw;
+    margin-right: 30px; /*4vw*/
     padding:0;
     background-color: rgb(224, 156, 29);
     color:white;

@@ -1,11 +1,13 @@
 <p>pagina-2 works!</p>
 
-<ng-container   >
-<ng-container >
+<ng-container>
+<ng-container *ngFor="let panino of panini" >
 
 <ol>
-    <li>{{panino.nome}}</li>
-    <li></li>
+    <li>{{panino | json}}</li>
+   
+     
+
 
 </ol>
 

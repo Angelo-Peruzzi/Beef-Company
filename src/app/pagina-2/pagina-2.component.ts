@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { P2ServiceService, Panino } from './p2-service.service';
-import { Observable } from 'rxjs';
+import { Observable, tap } from 'rxjs';
 
 @Component({
   selector: 'app-pagina-2',
@@ -9,30 +9,38 @@ import { Observable } from 'rxjs';
 })
 export class Pagina2Component  implements OnInit {
 
-panino : Panino = {
-  id : 1 ,
-  nome : "panino 1" , 
-  pane: "integrale",
-  carne : "pollo",
-  salsa : "bbq "
-}
+
+
+panini : Panino[] = [];
+
+
+
 
 
 paninoList$! : Observable<Panino[]>  
 
+
+
+
 constructor(private servizio : P2ServiceService) {
 
 
-
-
-}
+  } 
   ngOnInit(): void {
-    
+   this.paninoList$ = this.servizio.fetchAll()
   }
+  // ngOnInit(): void {
+  //   this.P2ServiceService.fetchAll().subscribe({
+  //     next : (lista : Panino[]) => {},
+  //     error: (err : any) =>  {},
+  //     complete: () =>  {
+  //       console.log("fetch completed")}
+  //     })
+  
+
+  }
+  
 
 
 
 
-
-
-}

@@ -1,6 +1,6 @@
 {
   "panini": [
-    [
+    
       {
         "id": 1,
         "nome": "panino 1",
@@ -37,5 +37,5 @@
         "salsa": "pesto"
       }
     ]
-  ]
+  
 }

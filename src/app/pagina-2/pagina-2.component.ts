@@ -57,6 +57,8 @@ constructor(private servizio : P2ServiceService) {
 
      onclick(event : Event){
       this.panini.splice(0,1)
+      
+      
      }
 
 

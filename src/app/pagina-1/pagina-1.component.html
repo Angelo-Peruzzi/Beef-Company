@@ -6,10 +6,15 @@
     <link rel="stylesheet" href="pagina-1.component.css" />
     <title>Document</title>
   </head>
-  <body>
+  <html>
     <nav class="main-nav">
       <h1>Beef Company Srl.</h1>
+      <a routerLink="ordini" >ordini</a>
+     
+
     </nav>
+      
+
 
     <div class="main-dropdowns">
       <mat-form-field>
@@ -39,8 +44,9 @@
     </div>
     <br />
     <br />
-    <section class="main-cards">
+    <body class="main-cards">
       <!-- card1 -->
+      <ng-container  *ngFor="let panino of panini">
       <mat-card>
         <mat-card-header>
           <mat-card-title> panino con carne </mat-card-title>
@@ -50,12 +56,14 @@
           src="https://handletheheat.com/wp-content/uploads/2023/04/homemade-burger-buns-SQUARE.jpg"
           alt="Photo of beef"
         />
+        
         <mat-card-subtitle> descrizione</mat-card-subtitle>
-        <button mat-raised-button color="accent">ordina</button>
+   
+        <button  (click)="openDialog()"    mat-raised-button color="accent">ordina!</button>
       </mat-card>
-
+    </ng-container>
       <!-- card2 -->
-      <mat-card>
+      <!-- <mat-card>
         <mat-card-header>
           <mat-card-title> panino con pollo </mat-card-title>
         </mat-card-header>
@@ -66,10 +74,10 @@
         />
         <mat-card-subtitle> descrizione card</mat-card-subtitle>
         <button mat-raised-button color="accent">ordina</button>
-      </mat-card>
+      </mat-card> -->
 
       <!-- card3 -->
-      <mat-card>
+      <!-- <mat-card>
         <mat-card-header>
           <mat-card-title> panino vegetariano </mat-card-title>
         </mat-card-header>
@@ -81,7 +89,16 @@
         <mat-card-subtitle> descrizione card</mat-card-subtitle>
         <button mat-raised-button color="accent">ordina</button>
       </mat-card>
-    </section>
+    </section> -->
+
+<div  #divS class="divSotto"></div>
+
+
+
+
+
+
+    
     <div class="main-next-button">
       <button mat-raised-button color="accent" (click)="magicOrder()">
         Next

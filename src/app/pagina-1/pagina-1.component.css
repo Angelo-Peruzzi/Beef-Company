@@ -64,3 +64,10 @@ body{
 .main-footer{
     background-color: rgb(224, 156, 29);
 }
+
+.divSotto{
+    text-align: center;
+    height: auto;
+    width: 200px;
+    margin: auto ;
+}

@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { JsonPipe, NgFor } from '@angular/common';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { P2ServiceService, Panino } from '../pagina-2/p2-service.service';
+import { Pg1Service } from './pg1.service';
 
 
 
@@ -42,6 +45,37 @@ export class Pagina1Component {
   getSauce():string{
     return this.chosenSauce;
   }
+
+
+// dialogo open
+panini : Panino[] = [];
+
+constructor( private serv : P2ServiceService){
+
+}
+
+ngOnInit(): void {
+    
+  this.serv.fetchAll().subscribe({
+    next : (lista : Panino[]) => {
+      this.panini = lista ; 
+    },
+    error: (err : any) =>  {},
+    complete: () =>  {
+      console.log("fetch completed")}
+     })
+
+
+    }
+
+
+  @ViewChild('divS')divProva!: ElementRef;
+openDialog(){   
+this.divProva.nativeElement.innerHTML=this.panini;
+   
+
+
+}
 
 
 

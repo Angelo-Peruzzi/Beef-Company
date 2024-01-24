@@ -1,0 +1,41 @@
+{
+  "panini": [
+    [
+      {
+        "id": 1,
+        "nome": "panino 1",
+        "pane": "integrale",
+        "carne": "pollo",
+        "salsa": "bbq"
+      },
+      {
+        "id": 2,
+        "nome": "panino 2",
+        "pane": "bianco",
+        "carne": "manzo",
+        "salsa": "maionese"
+      },
+      {
+        "id": 3,
+        "nome": "panino 3",
+        "pane": "ciabatta",
+        "carne": "maiale",
+        "salsa": "senape"
+      },
+      {
+        "id": 4,
+        "nome": "panino 4",
+        "pane": "multicereali",
+        "carne": "tacchino",
+        "salsa": "salsa tzatziki"
+      },
+      {
+        "id": 5,
+        "nome": "panino 5",
+        "pane": "baguette",
+        "carne": "prosciutto",
+        "salsa": "pesto"
+      }
+    ]
+  ]
+}

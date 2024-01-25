@@ -28,15 +28,7 @@ constructor(private servizio : P2ServiceService) {
 
 
   } 
-  // ngOnInit(): void {
-  // this.servizio.fetchAll().subscribe(){
-  //   next : (lista : Panino[]) => {},
-  //  Error: (err : any) =>  {}, 
-  // complete :  () =>  {
-  // console.log("fetch completed")}
-  //       }
-  // }
-  // }
+
 
 
 

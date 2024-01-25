@@ -17,7 +17,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
-import {MatDialog, MatDialogRef, MatDialogModule} from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [

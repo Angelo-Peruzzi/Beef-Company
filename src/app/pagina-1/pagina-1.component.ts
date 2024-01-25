@@ -12,6 +12,7 @@ import { Pg1Service } from './pg1.service';
 })
 export class Pagina1Component {
 
+
   title = 'Beef-Company';
   magicOrder(): void {
     alert("gay");

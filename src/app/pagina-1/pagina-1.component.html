@@ -1,1 +1,118 @@
-<p>pagina-1 works!</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pagina-1.component.css" />
+    <title>Document</title>
+  </head>
+  <html>
+    <nav class="main-nav">
+      <h1>Beef Company Srl.</h1>
+      <a routerLink="ordini" >ordini</a>
+     
+
+    </nav>
+      
+
+
+    <div class="main-dropdowns">
+      <mat-form-field>
+        <mat-label> Bread </mat-label>
+        <mat-select #bread (valueChange)="breadChoice(bread.value)">
+          <mat-option value="Normal bread"> Normal bread </mat-option>
+          <mat-option value="Whole grain bread"> Whole grain bread </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label> Content </mat-label>
+        <mat-select #content (valueChange)="contentChoice(content.value)">
+          <mat-option value="Beef"> Beef </mat-option>
+          <mat-option value="Chicken"> Chicken </mat-option>
+          <mat-option value="Veggie"> Veggie </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label> Sauce </mat-label>
+        <mat-select #sauce (valueChange)="sauceChoice(sauce.value)">
+          <mat-option value="none"> None </mat-option>
+          <mat-option value="Ketchup"> Ketchup </mat-option>
+          <mat-option value="Mayonnaise"> Mayonnaise </mat-option>
+          <mat-option value="BBQ"> BBQ </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <br />
+    <br />
+    <body class="main-cards">
+      <!-- card1 -->
+      <ng-container  *ngFor="let panino of panini">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title> panino con carne </mat-card-title>
+        </mat-card-header>
+        <img
+          mat-card-image
+          src="https://handletheheat.com/wp-content/uploads/2023/04/homemade-burger-buns-SQUARE.jpg"
+          alt="Photo of beef"
+        />
+        
+        <mat-card-subtitle> descrizione</mat-card-subtitle>
+   
+        <button  (click)="openDialog()"    mat-raised-button color="accent">ordina!</button>
+      </mat-card>
+    </ng-container>
+      <!-- card2 -->
+      <!-- <mat-card>
+        <mat-card-header>
+          <mat-card-title> panino con pollo </mat-card-title>
+        </mat-card-header>
+        <img
+          mat-card-image
+          src="https://ottawavalleymeats.com/cdn/shop/articles/Minced-Beef-Patties.webp?v=1683736998"
+          alt="Photo of beef"
+        />
+        <mat-card-subtitle> descrizione card</mat-card-subtitle>
+        <button mat-raised-button color="accent">ordina</button>
+      </mat-card> -->
+
+      <!-- card3 -->
+      <!-- <mat-card>
+        <mat-card-header>
+          <mat-card-title> panino vegetariano </mat-card-title>
+        </mat-card-header>
+        <img 
+          mat-card-image
+          src="https://venequ.it/wp-content/uploads/2022/10/ketchup-texture-1.jpg"
+          alt="Photo of beef"
+        />
+        <mat-card-subtitle> descrizione card</mat-card-subtitle>
+        <button mat-raised-button color="accent">ordina</button>
+      </mat-card>
+    </section> -->
+
+<div  #divS class="divSotto"></div>
+
+
+
+
+
+
+    
+    <div class="main-next-button">
+      <button mat-raised-button color="accent" (click)="magicOrder()">
+        Next
+        <mat-icon>check_circle</mat-icon>
+      </button>
+    </div>
+
+    <br>
+    <br>
+
+    <footer class="main-footer">
+      Beef Company Srl.,
+      Via dei Pagliacci, 420, Italy (IT),
+      +420 69696969
+    </footer>
+  </body>
+</html>

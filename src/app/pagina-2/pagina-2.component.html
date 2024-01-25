@@ -1,22 +1,23 @@
-
 <div class="div2">
     <h1>Beef Operators</h1>
-<ng-container class="ng-cont">
-<ng-container  *ngFor="let panino of panini">
- 
-<ul>
-    <li>{{panino.nome}} {{panino.pane}} {{panino.carne}} {{panino.salsa}} </li>
-    <button (click)="onclick($event)">Preparato</button>
-   
-     
+
+    <p></p>
+    <ng-container class="ng-cont">
+        <ng-container *ngFor="let panino of panini">
+
+            <ul>
+                <li>{{panino.nome}} {{panino.pane}} {{panino.carne}} {{panino.salsa}} </li>
+                <button (click)="onclick($event)">Preparato</button>
 
 
-</ul>
 
 
-</ng-container>
+            </ul>
 
-</ng-container>
+
+        </ng-container>
+
+    </ng-container>
 
 
 </div>

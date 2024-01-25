@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+body{
+    font-family: 'Helvetica';
+    background-color: rgb(182, 105, 49);
+    margin:0;
+    padding: 0;
+    color:white;
+}
+.main-nav{
+    background-color: rgb(224, 156, 29);
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    color:white;
+}
+.main-nav h1{
+    font-family: 'Rubik Burned';
+    padding:0;
+    padding-left: 30px;
+    margin:0;
+    align-self: center;
+}
+.main-dropdowns{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+.main-dropdowns mat-form-field{
+    margin-right: 4vw;
+}
+
+.main-cards{
+    display:flex;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.408), rgba(128, 128, 128, 0.321));
+}
+
+.main-cards mat-card{
+    margin-right: 30px; 
+    padding:0;
+    background-color: rgb(224, 156, 29);
+    color:white;
+    width: 15%;
+    height: 15%;
+}
+
+.main-next-button{
+    display:flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+}
+.main-next-button button{
+    margin: 15px 10vw 0px 0px;
+}
+
+.main-footer{
+    background-color: rgb(224, 156, 29);
+}
+
+.divSotto{
+    text-align: center;
+    height: auto;
+    width: 200px;
+    margin: auto ;
+}

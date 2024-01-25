@@ -29,6 +29,4 @@ export class P2ServiceService {
     // { params: new HttpParams().append("userId", 2) }
     return this.http.get<Panino[]>(`${endpoint}`,{ responseType : "json", observe:"body"}).pipe(tap((x)=> console.log(x))
     )
-  }
-
-}
+  }}

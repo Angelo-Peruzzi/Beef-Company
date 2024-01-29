@@ -1,0 +1,23 @@
+<!-- <p>ordini works!</p> -->
+
+
+<!-- <ng-container *ngFor="let burger of burgers">
+    <ul>
+        <li>  {{burger.title}}  : {{burger.meat}} - {{burger.bread}} - {{burger.ingredients}} </li>
+        <button (click)="onclick($event)">Preparato</button>
+    </ul>
+</ng-container> -->
+
+<div class="riepilogo" style=" width:40%;margin: auto; background-color:rgba(169, 169, 169, 0.517); padding: 5px; border-radius: 10px;">
+    <!-- burger ordinati stampati-->
+<h2 style="margin-left: 2rem;">Ordini Effettuati</h2>
+<ng-container *ngFor="let burger of orderedBurgers, let i=index">
+    <ul>
+        <li style="color:rgb(0, 0, 0)">  {{burger.title}}  : {{burger.meat}} - {{burger.bread}} - {{burger.ingredients}} </li>
+  <button style="border-radius: 25%;cursor: pointer; background-color: rgb(243, 191, 5);" (click)="clearOrder(i)">Preparato</button>
+    </ul>
+</ng-container>
+    
+</div>
+
+

@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Pagina2Component } from './pagina-2/pagina-2.component';
-import { Pagina1Component } from './pagina-1/pagina-1.component';
+import { HomeComponent } from './menu/components/home/home.component';
+import { OrdiniComponent } from './ordini/ordini.component';
 
 const routes: Routes = [
-  { path:"ordini", component: Pagina2Component},
-  { path:" ", component: Pagina1Component}
+  { path:"ordini", component: OrdiniComponent },
+  { path: "", component: HomeComponent }
 ];
 
 @NgModule({
@@ -13,4 +13,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-

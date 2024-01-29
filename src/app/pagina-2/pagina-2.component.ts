@@ -30,6 +30,7 @@ constructor(private servizio : P2ServiceService) {
   } 
 
 
+  
 
 
   ngOnInit(): void {

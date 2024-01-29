@@ -15,7 +15,7 @@ export class Pagina1Component {
 
   title = 'Beef-Company';
   magicOrder(): void {
-    alert("gay");
+    alert("ok");
   }
 
 
